@@ -310,16 +310,6 @@ nav a.active {
     z-index: 10;
 }
 
-.projects-header h2 {
-    font-size: 60px; /* Taille du texte pour "Nos projets" */
-}
-
-.projects-header p {
-    font-size: 14px; /* Taille du texte pour la description */
-    text-align: center; /* Centre la description */
-    margin-top: 32px; /* Espace entre le h2 et la description */
-}
-
 /* Navigation Projects */
 .nav-btn {
     width: 50px;
@@ -373,7 +363,21 @@ nav a.active {
     z-index: 1;
 }
 
+/* Slider */
+.slider-container {
+    position: relative;
+    width: 125%;
+    overflow: hidden;
+    z-index: 2;
+    margin-left: -150px;
+    box-sizing: border-box;
+}
 
+.slider-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
 
 /* Package Web Section */
 .pack-web {
@@ -418,42 +422,6 @@ nav a.active {
     cursor: pointer;
     transition: background-color 0.3s;
     
-}
-
-/* Slider */
-.slider-container {
-    /* ... existing code ... */
-    width: 300px; /* Largeur fixe pour le slider */
-    height: 600px; /* Hauteur fixe pour le slider */
-    overflow: hidden; /* Assurez-vous que le contenu débordant est masqué */
-    position: relative; /* Pour positionner les boutons de navigation */
-    /* ... existing code ... */
-}
-
-.slider-track {
-    /* ... existing code ... */
-    display: flex;
-    flex-direction: column; /* Aligne les éléments verticalement */
-    transition: transform 0.3s ease; /* Ajoute une transition pour le défilement */
-    /* ... existing code ... */
-}
-
-.nav-btn.prev {
-    /* ... existing code ... */
-    position: absolute; /* Positionnement absolu pour placer les boutons */
-    top: 10px; /* Positionne le bouton en haut */
-    left: 50%; /* Centre le bouton horizontalement */
-    transform: translateX(-50%); /* Centre le bouton horizontalement */
-    z-index: 10; /* Assurez-vous que le bouton est au-dessus du contenu */
-}
-
-.nav-btn.next {
-    /* ... existing code ... */
-    position: absolute; /* Positionnement absolu pour placer les boutons */
-    bottom: 10px; /* Positionne le bouton en bas */
-    left: 50%; /* Centre le bouton horizontalement */
-    transform: translateX(-50%); /* Centre le bouton horizontalement */
-    z-index: 10; /* Assurez-vous que le bouton est au-dessus du contenu */
 }
 
 
