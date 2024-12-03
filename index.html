@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chili Pix</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Sc/logo.png" alt="Chili Pix">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <video 
+            id="background-video"
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            preload="auto" 
+            class="background-video"
+        >
+            <source src="./Sc/0001.mp4" type="video/mp4">
+        </video>
+        
+        <div class="scrolling-text">
+            <div class="text-content">
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+            </div>
+        </div>
+
+        <div class="cta-button">
+            <button>Débuter un projet</button>
+        </div>
+    </div>
+
+    <section class="services">
+        <h2 class="section-title">Nos <span>services</span></h2>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="number">01</div>
+                <h3>Web</h3>
+                <p>Nous créons des sites web modernes et sur-mesure, pensés pour refléter l'identité de votre entreprise. Grâce à des plateformes comme Webflow et Framer, nous allions design et efficacité pour concevoir des sites esthétiques, évolutifs, et optimisés pour le référencement. Chaque site est intuitif et simple à gérer, vous permettant de rester autonome et de faire évoluer votre présence en ligne facilement. Que ce soit pour un site vitrine ou un projet plus ambitieux, nous adaptons chaque fonctionnalité à vos besoins spécifiques.</p>
+                <div class="service-image">
+                    <img src="Sc/web.png" alt="Web Service">
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="number">02</div>
+                <h3>Réseau sociaux</h3>
+                <p>Bâtir une présence en ligne est essentiel pour renforcer votre notoriété et attirer de nouveaux clients. Nous vous accompagnons dans la création d'une stratégie de contenu adaptée à votre marque, en définissant un ton et une esthétique qui vous ressemblent. De la conception visuelle des posts à la gestion de vos comptes, nous optimisons chaque publication pour susciter l'engagement et atteindre vos objectifs. Nous restons à vos côtés pour analyser les résultats et ajuster la stratégie au fil des temps, afin de garantir une croissance pérenne.</p>
+                <div class="service-image">
+                    <img src="Sc/rs.png" alt="Social Media Service">
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="number">03</div>
+                <h3>Photo et vidéo</h3>
+                <p>Des visuels de qualité font toute la différence pour valoriser vos produits et raconter votre histoire. Nous réalisons des séances photo et des tournages vidéo qui capturent l'essence de votre marque. Avec des images stylisées et des montages créatifs, nous mettons en avant ce qui vous rend unique et permettons à votre public de se connecter avec votre identité.</p>
+                <div class="service-image">
+                    <img src="Sc/pho.png" alt="Photo Video Service">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="projects-header">
+            <button class="nav-btn prev" id="prevBtn">←</button>
+            <div class="title-container">
+                <h2>Nos projets</h2>
+                <p>Découvrez comment nous pouvons pouvoir vous aider</p>
+            </div>
+            <button class="nav-btn next" id="nextBtn">→</button>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="project-card">
+                    <div class="glass-effect"></div>
+                    <div class="image-container">
+                        <img src="Sc/CANAL.png" alt="Canal Project">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="glass-effect"></div>
+                    <img src="Sc/SPOTIFY.png" alt="Spotify Project">
+                </div>
+                <div class="project-card">
+                    <div class="glass-effect"></div>
+                    <img src="Sc/HOGWARTS.png" alt="Hogwarts Project">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="red-stripe"></div>
+    <section class="web-section">
+        <div class="web-header">
+            <h2 class="web-title">Pack web</h2>
+            <div class="meeting-card">
+                <span class="meeting-text">Planifier un rendez-vous</span>
+                <button class="schedule-button">Schedule Meeting</button>
+            </div>
+        </div>
+
+        <p class="web-description">
+            Take a look at some of our recent projects<br>
+            to see how we've helped businesses like<br>
+            yours succeed online.
+        </p>
+
+        <div class="packages-container">
+            <div class="test-image-container">
+                <img src="Sc/test1.png" alt="Test Image" class="test-image">
+                <div class="price-button">1 200€</div>
+            </div>
+            <div class="test2-image-container">
+                <img src="Sc/test2.png" alt="Test Image 2" class="test2-image">
+                <div class="price-button">2 500€</div>
+            </div>
+            <div class="test3-image-container">
+                <img src="Sc/test3.png" alt="Test Image 3" class="test3-image">
+                <div class="price-button">3 000€</div>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 413px;"></div>
+
+    <section class="team-section">
+        <h2>Notre équipe</h2>
+        <div class="description">Nous sommes trois amis, sorties tous les trois de la même école, où nous avons passé ces dernières années à travailler ensemble sur de nombreux projets. À force de collaborer, nous avons appris les forces et les talents de chacun. Aujourd’hui, nous mettons cette complicité et notre passion commune au service de vos projets, avec l’envie de créer des expériences qui marquent.</div>
+        <div class="profiles">
+            <div class="profile">
+                <img src="sc/P.png" alt="Pablo Claustre">
+                <div class="info">
+                    <p class="name">Pablo Claustre</p>
+                    <span>Web designer</span>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="sc/J.png" alt="Julien Gomez">
+                <div class="info">
+                    <p class="name">Julien Gomez</p>
+                    <span>Community manager</span>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="sc/M.png" alt="Matteo Jaquet">
+                <div class="info">
+                    <p class="name">Matteo Jaquet</p>
+                    <span>Vidéaste et monteur</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pourquoi-section">
+        <h2>Pourquoi travailler <span class="gradient-text">avec nous ?</span></h2>
+        <img class="expertise-image" src="Sc/expertise.png" alt="Expertise">
+    </div>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="packweb.css">
+</body>
+</html> </html> 
