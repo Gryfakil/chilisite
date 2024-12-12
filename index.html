@@ -45,6 +45,11 @@
                 <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
                 <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
                 <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
+                <span>+ UI/UX + DIGITAL + WEB DESIGN</span>
             </div>
         </div>
 
@@ -181,12 +186,101 @@
         </div>
     </section>
 
+    <div class="nos-valeurs-section">
+        <h2>Nos valeurs</h2>
+        <div class="valeurs-grid">
+            <div class="valeur-card">
+                <img src="Sc/complicité.png" alt="Complicité">
+            </div>
+            <div class="valeur-card">
+                <img src="Sc/engagement.png" alt="Engagement">
+            </div>
+            <div class="valeur-card">
+                <img src="Sc/passion.png" alt="Passion">
+            </div>
+            <div class="valeur-card">
+                <img src="Sc/simplicité.png" alt="Simplicité">
+            </div>
+        </div>
+    </div>
+
     <div class="pourquoi-section">
         <h2>Pourquoi travailler <span class="gradient-text">avec nous ?</span></h2>
         <img class="expertise-image" src="Sc/expertise.png" alt="Expertise">
     </div>
 
+    <section class="expertise">
+        <!-- Contenu de la section expertise -->
+    </section>
+
+    <img src="sc/testi.png" alt="testi" class="testi-image">
+    <p class="description-temoignage">
+        Découvrez ce que nos clients pensent de notre travail et de leur expérience avec nous.
+    </p>
+
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <h3>Stuart Little</h3>
+            <p>CEO d'Infractive</p>
+            <div class="profile-placeholder"></div>
+            <p>Notre marque nous tient à cœur et si c'est aussi le cas de la vôtre, nous ne pourrions recommander un autre partenaire que Phunk Creative.</p>
+        </div>
+        <div class="testimonial">
+            <h3>Stuart Little</h3>
+            <p>CEO d'Infractive</p>
+            <div class="profile-placeholder"></div>
+            <p>Notre marque nous tient à cœur et si c'est aussi le cas de la vôtre, nous ne pourrions recommander un autre partenaire que Phunk Creative.</p>
+        </div>
+        <div class="testimonial">
+            <h3>Stuart Little</h3>
+            <p>CEO d'Infractive</p>
+            <div class="profile-placeholder"></div>
+            <p>Notre marque nous tient à cœur et si c'est aussi le cas de la vôtre, nous ne pourrions recommander un autre partenaire que Phunk Creative.</p>
+        </div>
+    </div>
+    <div class="ligne-blanche"></div>
+
+    <div class="contact-section">
+        <h2>Nous contacter</h2>
+        <div class="form-container">
+            <form id="contact-form" action="/contact" method="post">
+                <input type="text" name="firstName" placeholder="Prénom" required>
+                <input type="text" name="lastName" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Nous contacter</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="response-message"></div>
+
     <script src="script.js"></script>
     <link rel="stylesheet" href="packweb.css">
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('https://formspree.io/f/mpwzboen', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('response-message').innerText = 'Votre message a été envoyé avec succès.';
+                } else {
+                    document.getElementById('response-message').innerText = 'Erreur lors de l\'envoi du message.';
+                }
+            })
+            .catch(() => {
+                document.getElementById('response-message').innerText = 'Erreur lors de l\'envoi du message.';
+            });
+        });
+    </script>
 </body>
-</html> </html> 
+</html>
